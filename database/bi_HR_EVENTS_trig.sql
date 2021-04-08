@@ -5,7 +5,4 @@ begin
   if :new."ID" is null then
     select "HR_EVENTS_SEQ".nextval into :new."ID" from sys.dual;
   end if;
-  if :new."REGION" is null then
-    select 'GLOBAL' into :new."REGION" from sys.dual;
-  end if;
 end;

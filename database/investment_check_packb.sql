@@ -5,9 +5,9 @@ create or replace PACKAGE BODY investment_check AS
         l_rec check_record;
     BEGIN
         FOR l_rec IN (
-          select PERSON_ID, FIRST_NAME, LAST_NAME, 2.5*SAVINGS as INVESTMENT_LIMIT
+          select PERSON_ID, FIRST_NAME, LAST_NAME, 3*SAVINGS as INVESTMENT_LIMIT
           from PROSPECTS
-          where 2.5*SAVINGS >= check_limit)
+          where 3*SAVINGS >= check_limit)
         LOOP
           PIPE ROW (l_rec);
         END LOOP;
