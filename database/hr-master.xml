@@ -16,7 +16,11 @@
   </changeSet>
   <include file="./hr-events.xml" relativeToChangelogFile="true"/>
   <include file="./HR_EVENTS_trig-code.xml" relativeToChangelogFile="true"/>
-  <changeSet  author="Developer3"  id="tagDatabase-v2">  
+  <changeSet  author="Developer3"  id="tagDatabase-v3">  
     <tagDatabase  tag="version_3.0"/>  
+  </changeSet>
+  <include file="./hr-drop_phones.xml" relativeToChangelogFile="true"/>
+  <changeSet  author="Developer1"  id="tagDatabase-tk001">  
+    <tagDatabase  tag="ticket_001"/>  
   </changeSet>
 </databaseChangeLog>
