@@ -1,0 +1,39 @@
+<?xml version="1.1" encoding="UTF-8"?> 
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+    <changeSet author="Developer1" id="add_job_history_proc" runOnChange="true">
+      <sqlFile dbms="oracle"
+               endDelimiter=";"
+               path="./add_job_history_proc.sql"
+               relativeToChangelogFile="true"
+               splitStatements="false"
+               stripComments="false"/>
+    </changeSet>
+    <changeSet author="Developer1" id="secure_dml_proc" runOnChange="true">
+      <sqlFile dbms="oracle"
+               endDelimiter=";"
+               path="./secure_dml_proc.sql"
+               relativeToChangelogFile="true"
+               splitStatements="false"
+               stripComments="false"/>
+    </changeSet>
+    <changeSet author="Developer1" id="secure_employees_trig" runOnChange="true">
+      <sqlFile dbms="oracle"
+               endDelimiter=";"
+               path="./secure_employees_trig.sql"
+               relativeToChangelogFile="true"
+               splitStatements="false"
+               stripComments="false"/>
+    </changeSet>
+    <changeSet author="Developer1" id="update_job_history_trig" runOnChange="true">
+      <sqlFile dbms="oracle"
+               endDelimiter=";"
+               path="./update_job_history_trig.sql"
+               relativeToChangelogFile="true"
+               splitStatements="false"
+               stripComments="false"/>
+    </changeSet>
+</databaseChangeLog>
