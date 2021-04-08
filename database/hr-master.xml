@@ -14,4 +14,9 @@
   <changeSet  author="Developer2"  id="tagDatabase-v2">  
     <tagDatabase  tag="version_2.0"/>  
   </changeSet>
+  <include file="./hr-events.xml" relativeToChangelogFile="true"/>
+  <include file="./HR_EVENTS_trig-code.xml" relativeToChangelogFile="true"/>
+  <changeSet  author="Developer3"  id="tagDatabase-v2">  
+    <tagDatabase  tag="version_3.0"/>  
+  </changeSet>
 </databaseChangeLog>
