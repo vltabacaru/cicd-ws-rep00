@@ -9,4 +9,9 @@
   <changeSet  author="Developer1"  id="tagDatabase-v1">  
     <tagDatabase  tag="version_1.0"/>  
   </changeSet>
+  <include file="./hr-prospects.xml" relativeToChangelogFile="true"/>
+  <include file="./hr-investment_check-code.xml" relativeToChangelogFile="true"/>
+  <changeSet  author="Developer2"  id="tagDatabase-v2">  
+    <tagDatabase  tag="version_2.0"/>  
+  </changeSet>
 </databaseChangeLog>

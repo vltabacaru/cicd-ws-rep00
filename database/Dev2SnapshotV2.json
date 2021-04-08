@@ -1,0 +1,2074 @@
+{
+  "snapshot": {
+    "created": "2021-04-08T12:25:13.484",
+    "database": {
+      "productVersion": "Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production\nVersion 19.5.0.0.0",
+      "shortName": "oracle",
+      "majorVersion": "19",
+      "minorVersion": "0",
+      "user": "HR",
+      "productName": "Oracle",
+      "url": "jdbc:oracle:thin:@testcicd_high"
+    },
+    "objects": {
+      "liquibase.structure.core.Catalog": [
+        {
+          "catalog": {
+            "default": true,
+            "name": "HR",
+            "snapshotId": "7583100"
+          }
+        }]
+      ,
+      "liquibase.structure.core.Column": [
+        {
+          "column": {
+            "name": "AUTHOR",
+            "nullable": false,
+            "order": "2!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583201",
+            "snapshotId": "7583203",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "BIRTH_DATE",
+            "nullable": true,
+            "order": "6!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583223",
+            "snapshotId": "7583229",
+            "type": {
+              "columnSize": "7!{java.lang.Integer}",
+              "dataTypeId": "93!{java.lang.Integer}",
+              "typeName": "DATE"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "CITY",
+            "nullable": false,
+            "order": "13!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583118",
+            "type": {
+              "columnSize": "30!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "CITY",
+            "notNullConstraintName": "LOC_CITY_NN",
+            "nullable": false,
+            "order": "4!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583122",
+            "remarks": "A not null column that shows city where an office, warehouse, or\nproduction site of a company is located.",
+            "snapshotId": "7583124",
+            "type": {
+              "columnSize": "30!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "COMMENTS",
+            "nullable": true,
+            "order": "9!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583201",
+            "snapshotId": "7583210",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "COMMISSION_PCT",
+            "nullable": true,
+            "order": "9!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583154",
+            "remarks": "Commission percentage of the employee; Only employees in sales\ndepartment elgible for commission percentage",
+            "snapshotId": "7583172",
+            "type": {
+              "columnSize": "2!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "2!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "COMMISSION_PCT",
+            "nullable": true,
+            "order": "10!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583115",
+            "type": {
+              "columnSize": "2!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "2!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "CONTEXTS",
+            "nullable": true,
+            "order": "12!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583201",
+            "snapshotId": "7583213",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "COUNTRY_ID",
+            "notNullConstraintName": "COUNTRY_ID_NN",
+            "nullable": false,
+            "order": "1!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583135",
+            "remarks": "Primary key of countries table.",
+            "snapshotId": "7583134",
+            "type": {
+              "columnSize": "2!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "1!{java.lang.Integer}",
+              "typeName": "CHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "COUNTRY_ID",
+            "nullable": true,
+            "order": "6!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583111",
+            "type": {
+              "columnSize": "2!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "1!{java.lang.Integer}",
+              "typeName": "CHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "COUNTRY_ID",
+            "nullable": true,
+            "order": "6!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583122",
+            "remarks": "Country where an office, warehouse, or production site of a company is\nlocated. Foreign key to country_id column of the countries table.",
+            "snapshotId": "7583130",
+            "type": {
+              "columnSize": "2!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "1!{java.lang.Integer}",
+              "typeName": "CHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "COUNTRY_NAME",
+            "nullable": true,
+            "order": "2!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583135",
+            "remarks": "Country name",
+            "snapshotId": "7583137",
+            "type": {
+              "columnSize": "40!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "COUNTRY_NAME",
+            "nullable": true,
+            "order": "15!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583120",
+            "type": {
+              "columnSize": "40!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "DATEEXECUTED",
+            "nullable": false,
+            "order": "4!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583201",
+            "snapshotId": "7583205",
+            "type": {
+              "columnSize": "11!{java.lang.Integer}",
+              "dataTypeId": "93!{java.lang.Integer}",
+              "typeName": "TIMESTAMP(6)"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "DEPARTMENT_ID",
+            "nullable": false,
+            "order": "1!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583176",
+            "remarks": "Primary key column of departments table.",
+            "snapshotId": "7583175",
+            "type": {
+              "columnSize": "4!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "DEPARTMENT_ID",
+            "nullable": true,
+            "order": "11!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583154",
+            "remarks": "Department id where employee works; foreign key to department_id\ncolumn of the departments table",
+            "snapshotId": "7583162",
+            "type": {
+              "columnSize": "4!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "DEPARTMENT_ID",
+            "nullable": true,
+            "order": "4!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583109",
+            "type": {
+              "columnSize": "4!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "DEPARTMENT_ID",
+            "nullable": true,
+            "order": "5!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583187",
+            "remarks": "Department id in which the employee worked in the past; foreign key to deparment_id column in the departments table",
+            "snapshotId": "7583189",
+            "type": {
+              "columnSize": "4!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "DEPARTMENT_NAME",
+            "notNullConstraintName": "DEPT_NAME_NN",
+            "nullable": false,
+            "order": "2!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583176",
+            "remarks": "A not null column that shows name of a department. Administration,\nMarketing, Purchasing, Human Resources, Shipping, IT, Executive, Public\nRelations, Sales, Finance, and Accounting.",
+            "snapshotId": "7583180",
+            "type": {
+              "columnSize": "30!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "DEPARTMENT_NAME",
+            "nullable": false,
+            "order": "11!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583116",
+            "type": {
+              "columnSize": "30!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "DEPLOYMENT_ID",
+            "nullable": true,
+            "order": "14!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583201",
+            "snapshotId": "7583215",
+            "type": {
+              "columnSize": "10!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "DESCRIPTION",
+            "nullable": true,
+            "order": "8!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583201",
+            "snapshotId": "7583209",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "EMAIL",
+            "notNullConstraintName": "EMP_EMAIL_NN",
+            "nullable": false,
+            "order": "4!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583154",
+            "remarks": "Email id of the employee",
+            "snapshotId": "7583156",
+            "type": {
+              "columnSize": "25!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "EMAIL",
+            "nullable": true,
+            "order": "4!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583223",
+            "snapshotId": "7583227",
+            "type": {
+              "columnSize": "37!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "EMPLOYEE_ID",
+            "nullable": false,
+            "order": "1!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583154",
+            "remarks": "Primary key of employees table.",
+            "snapshotId": "7583166",
+            "type": {
+              "columnSize": "6!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "EMPLOYEE_ID",
+            "nullable": false,
+            "order": "1!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583106",
+            "type": {
+              "columnSize": "6!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "EMPLOYEE_ID",
+            "notNullConstraintName": "JHIST_EMPLOYEE_NN",
+            "nullable": false,
+            "order": "1!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583187",
+            "remarks": "A not null column in the complex primary key employee_id+start_date.\nForeign key to employee_id column of the employee table",
+            "snapshotId": "7583191",
+            "type": {
+              "columnSize": "6!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "END_DATE",
+            "notNullConstraintName": "JHIST_END_DATE_NN",
+            "nullable": false,
+            "order": "3!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583187",
+            "remarks": "Last day of the employee in this job role. A not null column. Must be\ngreater than the start_date of the job_history table.\n(enforced by constraint jhist_date_interval)",
+            "snapshotId": "7583196",
+            "type": {
+              "columnSize": "7!{java.lang.Integer}",
+              "dataTypeId": "93!{java.lang.Integer}",
+              "typeName": "DATE"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "EXECTYPE",
+            "nullable": false,
+            "order": "6!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583201",
+            "snapshotId": "7583207",
+            "type": {
+              "columnSize": "10!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "FILENAME",
+            "nullable": false,
+            "order": "3!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583201",
+            "snapshotId": "7583204",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "FIRST_NAME",
+            "nullable": true,
+            "order": "2!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583154",
+            "remarks": "First name of the employee. A not null column.",
+            "snapshotId": "7583160",
+            "type": {
+              "columnSize": "20!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "FIRST_NAME",
+            "nullable": true,
+            "order": "7!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583112",
+            "type": {
+              "columnSize": "20!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "FIRST_NAME",
+            "nullable": true,
+            "order": "2!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583223",
+            "snapshotId": "7583225",
+            "type": {
+              "columnSize": "20!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "HIRE_DATE",
+            "notNullConstraintName": "EMP_HIRE_DATE_NN",
+            "nullable": false,
+            "order": "6!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583154",
+            "remarks": "Date when the employee started on this job. A not null column.",
+            "snapshotId": "7583170",
+            "type": {
+              "columnSize": "7!{java.lang.Integer}",
+              "dataTypeId": "93!{java.lang.Integer}",
+              "typeName": "DATE"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "ID",
+            "nullable": false,
+            "order": "1!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583201",
+            "snapshotId": "7583202",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "ID",
+            "nullable": false,
+            "order": "1!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583216",
+            "snapshotId": "7583218",
+            "type": {
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "JOB_ID",
+            "notNullConstraintName": "EMP_JOB_NN",
+            "nullable": false,
+            "order": "7!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583154",
+            "remarks": "Current job of the employee; foreign key to job_id column of the\njobs table. A not null column.",
+            "snapshotId": "7583164",
+            "type": {
+              "columnSize": "10!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "JOB_ID",
+            "nullable": false,
+            "order": "2!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583107",
+            "type": {
+              "columnSize": "10!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "JOB_ID",
+            "nullable": false,
+            "order": "1!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583147",
+            "remarks": "Primary key of jobs table.",
+            "snapshotId": "7583149",
+            "type": {
+              "columnSize": "10!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "JOB_ID",
+            "notNullConstraintName": "JHIST_JOB_NN",
+            "nullable": false,
+            "order": "4!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583187",
+            "remarks": "Job role in which the employee worked in the past; foreign key to\njob_id column in the jobs table. A not null column.",
+            "snapshotId": "7583195",
+            "type": {
+              "columnSize": "10!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "JOB_TITLE",
+            "nullable": false,
+            "order": "12!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583117",
+            "type": {
+              "columnSize": "35!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "JOB_TITLE",
+            "notNullConstraintName": "JOB_TITLE_NN",
+            "nullable": false,
+            "order": "2!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583147",
+            "remarks": "A not null column that shows job title, e.g. AD_VP, FI_ACCOUNTANT",
+            "snapshotId": "7583150",
+            "type": {
+              "columnSize": "35!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "LABELS",
+            "nullable": true,
+            "order": "13!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583201",
+            "snapshotId": "7583214",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "LAST_NAME",
+            "notNullConstraintName": "EMP_LAST_NAME_NN",
+            "nullable": false,
+            "order": "3!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583154",
+            "remarks": "Last name of the employee. A not null column.",
+            "snapshotId": "7583159",
+            "type": {
+              "columnSize": "25!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "LAST_NAME",
+            "nullable": false,
+            "order": "8!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583113",
+            "type": {
+              "columnSize": "25!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "LAST_NAME",
+            "nullable": false,
+            "order": "3!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583223",
+            "snapshotId": "7583226",
+            "type": {
+              "columnSize": "25!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "LIQUIBASE",
+            "nullable": true,
+            "order": "11!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583201",
+            "snapshotId": "7583212",
+            "type": {
+              "columnSize": "20!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "LOCATION_ID",
+            "nullable": true,
+            "order": "4!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583176",
+            "remarks": "Location id where a department is located. Foreign key to location_id column of locations table.",
+            "snapshotId": "7583178",
+            "type": {
+              "columnSize": "4!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "LOCATION_ID",
+            "nullable": true,
+            "order": "5!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583110",
+            "type": {
+              "columnSize": "4!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "LOCATION_ID",
+            "nullable": false,
+            "order": "1!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583122",
+            "remarks": "Primary key of locations table",
+            "snapshotId": "7583126",
+            "type": {
+              "columnSize": "4!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "LOCKED",
+            "nullable": false,
+            "order": "2!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583216",
+            "snapshotId": "7583219",
+            "type": {
+              "columnSize": "1!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "LOCKEDBY",
+            "nullable": true,
+            "order": "4!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583216",
+            "snapshotId": "7583221",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "LOCKGRANTED",
+            "nullable": true,
+            "order": "3!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583216",
+            "snapshotId": "7583220",
+            "type": {
+              "columnSize": "11!{java.lang.Integer}",
+              "dataTypeId": "93!{java.lang.Integer}",
+              "typeName": "TIMESTAMP(6)"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "MANAGER_ID",
+            "nullable": true,
+            "order": "3!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583176",
+            "remarks": "Manager_id of a department. Foreign key to employee_id column of employees table. The manager_id column of the employee table references this column.",
+            "snapshotId": "7583181",
+            "type": {
+              "columnSize": "6!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "MANAGER_ID",
+            "nullable": true,
+            "order": "10!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583154",
+            "remarks": "Manager id of the employee; has same domain as manager_id in\ndepartments table. Foreign key to employee_id column of employees table.\n(useful for reflexive joins and CONNECT BY query)",
+            "snapshotId": "7583168",
+            "type": {
+              "columnSize": "6!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "MANAGER_ID",
+            "nullable": true,
+            "order": "3!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583108",
+            "type": {
+              "columnSize": "6!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "MAX_SALARY",
+            "nullable": true,
+            "order": "4!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583147",
+            "remarks": "Maximum salary for a job title",
+            "snapshotId": "7583152",
+            "type": {
+              "columnSize": "6!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "MD5SUM",
+            "nullable": true,
+            "order": "7!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583201",
+            "snapshotId": "7583208",
+            "type": {
+              "columnSize": "35!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "MIN_SALARY",
+            "nullable": true,
+            "order": "3!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583147",
+            "remarks": "Minimum salary for a job title.",
+            "snapshotId": "7583151",
+            "type": {
+              "columnSize": "6!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "ORDEREXECUTED",
+            "nullable": false,
+            "order": "5!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583201",
+            "snapshotId": "7583206",
+            "type": {
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "PERSON_ID",
+            "nullable": true,
+            "order": "1!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583223",
+            "snapshotId": "7583224",
+            "type": {
+              "columnSize": "6!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "0!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "PHONE_NUMBER",
+            "nullable": true,
+            "order": "5!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583154",
+            "remarks": "Phone number of the employee; includes country code and area code",
+            "snapshotId": "7583169",
+            "type": {
+              "columnSize": "20!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "PHONE_NUMBER",
+            "nullable": true,
+            "order": "5!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583223",
+            "snapshotId": "7583228",
+            "type": {
+              "columnSize": "20!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "POSTAL_CODE",
+            "nullable": true,
+            "order": "3!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583122",
+            "remarks": "Postal code of the location of an office, warehouse, or production site\nof a company.",
+            "snapshotId": "7583132",
+            "type": {
+              "columnSize": "12!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "REGION_ID",
+            "nullable": true,
+            "order": "3!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583135",
+            "remarks": "Region ID for the country. Foreign key to region_id column in the departments table.",
+            "snapshotId": "7583138",
+            "type": {
+              "dataTypeId": "3!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "REGION_ID",
+            "notNullConstraintName": "REGION_ID_NN",
+            "nullable": false,
+            "order": "1!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583141",
+            "snapshotId": "7583140",
+            "type": {
+              "dataTypeId": "3!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "REGION_NAME",
+            "nullable": true,
+            "order": "16!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583121",
+            "type": {
+              "columnSize": "25!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "REGION_NAME",
+            "nullable": true,
+            "order": "2!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583141",
+            "snapshotId": "7583143",
+            "type": {
+              "columnSize": "25!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "SALARY",
+            "nullable": true,
+            "order": "8!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583154",
+            "remarks": "Monthly salary of the employee. Must be greater\nthan zero (enforced by constraint emp_salary_min)",
+            "snapshotId": "7583171",
+            "type": {
+              "columnSize": "8!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "2!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "SALARY",
+            "nullable": true,
+            "order": "9!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583114",
+            "type": {
+              "columnSize": "8!{java.lang.Integer}",
+              "dataTypeId": "3!{java.lang.Integer}",
+              "decimalDigits": "2!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "SAVINGS",
+            "nullable": true,
+            "order": "7!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583223",
+            "snapshotId": "7583230",
+            "type": {
+              "dataTypeId": "3!{java.lang.Integer}",
+              "typeName": "NUMBER"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "START_DATE",
+            "notNullConstraintName": "JHIST_START_DATE_NN",
+            "nullable": false,
+            "order": "2!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583187",
+            "remarks": "A not null column in the complex primary key employee_id+start_date.\nMust be less than the end_date of the job_history table. (enforced by\nconstraint jhist_date_interval)",
+            "snapshotId": "7583192",
+            "type": {
+              "columnSize": "7!{java.lang.Integer}",
+              "dataTypeId": "93!{java.lang.Integer}",
+              "typeName": "DATE"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "STATE_PROVINCE",
+            "nullable": true,
+            "order": "14!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.View#7583105",
+            "snapshotId": "7583119",
+            "type": {
+              "columnSize": "25!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "STATE_PROVINCE",
+            "nullable": true,
+            "order": "5!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583122",
+            "remarks": "State or Province where an office, warehouse, or production site of a\ncompany is located.",
+            "snapshotId": "7583128",
+            "type": {
+              "columnSize": "25!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "STREET_ADDRESS",
+            "nullable": true,
+            "order": "2!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583122",
+            "remarks": "Street address of an office, warehouse, or production site of a company.\nContains building number and street name",
+            "snapshotId": "7583131",
+            "type": {
+              "columnSize": "40!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        },
+        {
+          "column": {
+            "name": "TAG",
+            "nullable": true,
+            "order": "10!{java.lang.Integer}",
+            "relation": "liquibase.structure.core.Table#7583201",
+            "snapshotId": "7583211",
+            "type": {
+              "columnSize": "255!{java.lang.Integer}",
+              "columnSizeUnit": "BYTE!{liquibase.structure.core.DataType$ColumnSizeUnit}",
+              "dataTypeId": "12!{java.lang.Integer}",
+              "typeName": "VARCHAR"
+            }
+          }
+        }]
+      ,
+      "liquibase.structure.core.ForeignKey": [
+        {
+          "foreignKey": {
+            "deferrable": false,
+            "deleteRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#7583138"]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#7583135",
+            "initiallyDeferred": false,
+            "name": "COUNTR_REG_FK",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#7583140"]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#7583141",
+            "snapshotId": "7583139",
+            "updateRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "validate": true
+          }
+        },
+        {
+          "foreignKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583177",
+            "deferrable": false,
+            "deleteRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#7583178"]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#7583176",
+            "initiallyDeferred": false,
+            "name": "DEPT_LOC_FK",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#7583126"]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#7583122",
+            "snapshotId": "7583183",
+            "updateRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "validate": true
+          }
+        },
+        {
+          "foreignKey": {
+            "deferrable": false,
+            "deleteRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#7583181"]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#7583176",
+            "initiallyDeferred": false,
+            "name": "DEPT_MGR_FK",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#7583166"]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#7583154",
+            "snapshotId": "7583182",
+            "updateRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "validate": true
+          }
+        },
+        {
+          "foreignKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583161",
+            "deferrable": false,
+            "deleteRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#7583162"]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#7583154",
+            "initiallyDeferred": false,
+            "name": "EMP_DEPT_FK",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#7583175"]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#7583176",
+            "snapshotId": "7583174",
+            "updateRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "validate": true
+          }
+        },
+        {
+          "foreignKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583163",
+            "deferrable": false,
+            "deleteRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#7583164"]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#7583154",
+            "initiallyDeferred": false,
+            "name": "EMP_JOB_FK",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#7583149"]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#7583147",
+            "snapshotId": "7583185",
+            "updateRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "validate": true
+          }
+        },
+        {
+          "foreignKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583167",
+            "deferrable": false,
+            "deleteRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#7583168"]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#7583154",
+            "initiallyDeferred": false,
+            "name": "EMP_MANAGER_FK",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#7583166"]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#7583154",
+            "snapshotId": "7583173",
+            "updateRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "validate": true
+          }
+        },
+        {
+          "foreignKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583188",
+            "deferrable": false,
+            "deleteRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#7583189"]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#7583187",
+            "initiallyDeferred": false,
+            "name": "JHIST_DEPT_FK",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#7583175"]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#7583176",
+            "snapshotId": "7583199",
+            "updateRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "validate": true
+          }
+        },
+        {
+          "foreignKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583193",
+            "deferrable": false,
+            "deleteRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#7583191"]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#7583187",
+            "initiallyDeferred": false,
+            "name": "JHIST_EMP_FK",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#7583166"]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#7583154",
+            "snapshotId": "7583198",
+            "updateRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "validate": true
+          }
+        },
+        {
+          "foreignKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583194",
+            "deferrable": false,
+            "deleteRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#7583195"]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#7583187",
+            "initiallyDeferred": false,
+            "name": "JHIST_JOB_FK",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#7583149"]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#7583147",
+            "snapshotId": "7583197",
+            "updateRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "validate": true
+          }
+        },
+        {
+          "foreignKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583129",
+            "deferrable": false,
+            "deleteRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "foreignKeyColumns": [
+              "liquibase.structure.core.Column#7583130"]
+            ,
+            "foreignKeyTable": "liquibase.structure.core.Table#7583122",
+            "initiallyDeferred": false,
+            "name": "LOC_C_ID_FK",
+            "primaryKeyColumns": [
+              "liquibase.structure.core.Column#7583134"]
+            ,
+            "primaryKeyTable": "liquibase.structure.core.Table#7583135",
+            "snapshotId": "7583133",
+            "updateRule": "importedKeyRestrict!{liquibase.structure.core.ForeignKeyConstraintType}",
+            "validate": true
+          }
+        }]
+      ,
+      "liquibase.structure.core.Index": [
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583134"]
+            ,
+            "name": "COUNTRY_C_ID_PK",
+            "snapshotId": "7583136",
+            "table": "liquibase.structure.core.Table#7583135",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583175"]
+            ,
+            "name": "DEPT_ID_PK",
+            "snapshotId": "7583179",
+            "table": "liquibase.structure.core.Table#7583176",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583178"]
+            ,
+            "name": "DEPT_LOCATION_IX",
+            "snapshotId": "7583177",
+            "table": "liquibase.structure.core.Table#7583176",
+            "unique": false
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583162"]
+            ,
+            "name": "EMP_DEPARTMENT_IX",
+            "snapshotId": "7583161",
+            "table": "liquibase.structure.core.Table#7583154",
+            "unique": false
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583156"]
+            ,
+            "name": "EMP_EMAIL_UK",
+            "snapshotId": "7583157",
+            "table": "liquibase.structure.core.Table#7583154",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583166"]
+            ,
+            "name": "EMP_EMP_ID_PK",
+            "snapshotId": "7583165",
+            "table": "liquibase.structure.core.Table#7583154",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583164"]
+            ,
+            "name": "EMP_JOB_IX",
+            "snapshotId": "7583163",
+            "table": "liquibase.structure.core.Table#7583154",
+            "unique": false
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583168"]
+            ,
+            "name": "EMP_MANAGER_IX",
+            "snapshotId": "7583167",
+            "table": "liquibase.structure.core.Table#7583154",
+            "unique": false
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583159",
+              "liquibase.structure.core.Column#7583160"]
+            ,
+            "name": "EMP_NAME_IX",
+            "snapshotId": "7583158",
+            "table": "liquibase.structure.core.Table#7583154",
+            "unique": false
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583189"]
+            ,
+            "name": "JHIST_DEPARTMENT_IX",
+            "snapshotId": "7583188",
+            "table": "liquibase.structure.core.Table#7583187",
+            "unique": false
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583191"]
+            ,
+            "name": "JHIST_EMPLOYEE_IX",
+            "snapshotId": "7583193",
+            "table": "liquibase.structure.core.Table#7583187",
+            "unique": false
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583191",
+              "liquibase.structure.core.Column#7583192"]
+            ,
+            "name": "JHIST_EMP_ID_ST_DATE_PK",
+            "snapshotId": "7583190",
+            "table": "liquibase.structure.core.Table#7583187",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583195"]
+            ,
+            "name": "JHIST_JOB_IX",
+            "snapshotId": "7583194",
+            "table": "liquibase.structure.core.Table#7583187",
+            "unique": false
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583149"]
+            ,
+            "name": "JOB_ID_PK",
+            "snapshotId": "7583148",
+            "table": "liquibase.structure.core.Table#7583147",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583124"]
+            ,
+            "name": "LOC_CITY_IX",
+            "snapshotId": "7583123",
+            "table": "liquibase.structure.core.Table#7583122",
+            "unique": false
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583130"]
+            ,
+            "name": "LOC_COUNTRY_IX",
+            "snapshotId": "7583129",
+            "table": "liquibase.structure.core.Table#7583122",
+            "unique": false
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583126"]
+            ,
+            "name": "LOC_ID_PK",
+            "snapshotId": "7583125",
+            "table": "liquibase.structure.core.Table#7583122",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583128"]
+            ,
+            "name": "LOC_STATE_PROVINCE_IX",
+            "snapshotId": "7583127",
+            "table": "liquibase.structure.core.Table#7583122",
+            "unique": false
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583218"]
+            ,
+            "name": "PK_DATABASECHANGELOGLOCK",
+            "snapshotId": "7583217",
+            "table": "liquibase.structure.core.Table#7583216",
+            "unique": true
+          }
+        },
+        {
+          "index": {
+            "columns": [
+              "liquibase.structure.core.Column#7583140"]
+            ,
+            "name": "REG_ID_PK",
+            "snapshotId": "7583142",
+            "table": "liquibase.structure.core.Table#7583141",
+            "unique": true
+          }
+        }]
+      ,
+      "liquibase.structure.core.PrimaryKey": [
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583136",
+            "columns": [
+              "liquibase.structure.core.Column#7583134"]
+            ,
+            "name": "COUNTRY_C_ID_PK",
+            "snapshotId": "7583145",
+            "table": "liquibase.structure.core.Table#7583135",
+            "validate": true
+          }
+        },
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583179",
+            "columns": [
+              "liquibase.structure.core.Column#7583175"]
+            ,
+            "name": "DEPT_ID_PK",
+            "snapshotId": "7583184",
+            "table": "liquibase.structure.core.Table#7583176",
+            "validate": true
+          }
+        },
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583165",
+            "columns": [
+              "liquibase.structure.core.Column#7583166"]
+            ,
+            "name": "EMP_EMP_ID_PK",
+            "snapshotId": "7583186",
+            "table": "liquibase.structure.core.Table#7583154",
+            "validate": true
+          }
+        },
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583190",
+            "columns": [
+              "liquibase.structure.core.Column#7583191",
+              "liquibase.structure.core.Column#7583192"]
+            ,
+            "name": "JHIST_EMP_ID_ST_DATE_PK",
+            "snapshotId": "7583200",
+            "table": "liquibase.structure.core.Table#7583187",
+            "validate": true
+          }
+        },
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583148",
+            "columns": [
+              "liquibase.structure.core.Column#7583149"]
+            ,
+            "name": "JOB_ID_PK",
+            "snapshotId": "7583153",
+            "table": "liquibase.structure.core.Table#7583147",
+            "validate": true
+          }
+        },
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583125",
+            "columns": [
+              "liquibase.structure.core.Column#7583126"]
+            ,
+            "name": "LOC_ID_PK",
+            "snapshotId": "7583146",
+            "table": "liquibase.structure.core.Table#7583122",
+            "validate": true
+          }
+        },
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583217",
+            "columns": [
+              "liquibase.structure.core.Column#7583218"]
+            ,
+            "name": "PK_DATABASECHANGELOGLOCK",
+            "snapshotId": "7583222",
+            "table": "liquibase.structure.core.Table#7583216",
+            "validate": true
+          }
+        },
+        {
+          "primaryKey": {
+            "backingIndex": "liquibase.structure.core.Index#7583142",
+            "columns": [
+              "liquibase.structure.core.Column#7583140"]
+            ,
+            "name": "REG_ID_PK",
+            "snapshotId": "7583144",
+            "table": "liquibase.structure.core.Table#7583141",
+            "validate": true
+          }
+        }]
+      ,
+      "liquibase.structure.core.Schema": [
+        {
+          "schema": {
+            "catalog": "liquibase.structure.core.Catalog#7583100",
+            "default": true,
+            "name": "HR",
+            "snapshotId": "7583101"
+          }
+        }]
+      ,
+      "liquibase.structure.core.Sequence": [
+        {
+          "sequence": {
+            "cacheSize": "0!{java.math.BigInteger}",
+            "incrementBy": "10!{java.math.BigInteger}",
+            "maxValue": "9990!{java.math.BigInteger}",
+            "name": "DEPARTMENTS_SEQ",
+            "schema": "liquibase.structure.core.Schema#7583101",
+            "snapshotId": "7583103",
+            "startValue": "280!{java.math.BigInteger}"
+          }
+        },
+        {
+          "sequence": {
+            "cacheSize": "0!{java.math.BigInteger}",
+            "maxValue": "9999999999999999999999999999!{java.math.BigInteger}",
+            "name": "EMPLOYEES_SEQ",
+            "schema": "liquibase.structure.core.Schema#7583101",
+            "snapshotId": "7583102",
+            "startValue": "207!{java.math.BigInteger}"
+          }
+        },
+        {
+          "sequence": {
+            "cacheSize": "0!{java.math.BigInteger}",
+            "incrementBy": "100!{java.math.BigInteger}",
+            "maxValue": "9900!{java.math.BigInteger}",
+            "name": "LOCATIONS_SEQ",
+            "schema": "liquibase.structure.core.Schema#7583101",
+            "snapshotId": "7583104",
+            "startValue": "3300!{java.math.BigInteger}"
+          }
+        }]
+      ,
+      "liquibase.structure.core.Table": [
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#7583134",
+              "liquibase.structure.core.Column#7583137",
+              "liquibase.structure.core.Column#7583138"]
+            ,
+            "default_tablespace": true,
+            "indexes": [
+              "liquibase.structure.core.Index#7583136"]
+            ,
+            "name": "COUNTRIES",
+            "outgoingForeignKeys": [
+              "liquibase.structure.core.ForeignKey#7583139"]
+            ,
+            "primaryKey": "liquibase.structure.core.PrimaryKey#7583145",
+            "remarks": "country table. Contains 25 rows. References with locations table.",
+            "schema": "liquibase.structure.core.Schema#7583101",
+            "snapshotId": "7583135",
+            "tablespace": "DATA"
+          }
+        },
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#7583202",
+              "liquibase.structure.core.Column#7583203",
+              "liquibase.structure.core.Column#7583204",
+              "liquibase.structure.core.Column#7583205",
+              "liquibase.structure.core.Column#7583206",
+              "liquibase.structure.core.Column#7583207",
+              "liquibase.structure.core.Column#7583208",
+              "liquibase.structure.core.Column#7583209",
+              "liquibase.structure.core.Column#7583210",
+              "liquibase.structure.core.Column#7583211",
+              "liquibase.structure.core.Column#7583212",
+              "liquibase.structure.core.Column#7583213",
+              "liquibase.structure.core.Column#7583214",
+              "liquibase.structure.core.Column#7583215"]
+            ,
+            "default_tablespace": true,
+            "name": "DATABASECHANGELOG",
+            "schema": "liquibase.structure.core.Schema#7583101",
+            "snapshotId": "7583201",
+            "tablespace": "DATA"
+          }
+        },
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#7583218",
+              "liquibase.structure.core.Column#7583219",
+              "liquibase.structure.core.Column#7583220",
+              "liquibase.structure.core.Column#7583221"]
+            ,
+            "default_tablespace": true,
+            "indexes": [
+              "liquibase.structure.core.Index#7583217"]
+            ,
+            "name": "DATABASECHANGELOGLOCK",
+            "primaryKey": "liquibase.structure.core.PrimaryKey#7583222",
+            "schema": "liquibase.structure.core.Schema#7583101",
+            "snapshotId": "7583216",
+            "tablespace": "DATA"
+          }
+        },
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#7583175",
+              "liquibase.structure.core.Column#7583180",
+              "liquibase.structure.core.Column#7583181",
+              "liquibase.structure.core.Column#7583178"]
+            ,
+            "default_tablespace": true,
+            "indexes": [
+              "liquibase.structure.core.Index#7583177",
+              "liquibase.structure.core.Index#7583179"]
+            ,
+            "name": "DEPARTMENTS",
+            "outgoingForeignKeys": [
+              "liquibase.structure.core.ForeignKey#7583182",
+              "liquibase.structure.core.ForeignKey#7583183"]
+            ,
+            "primaryKey": "liquibase.structure.core.PrimaryKey#7583184",
+            "remarks": "Departments table that shows details of departments where employees\nwork. Contains 27 rows; references with locations, employees, and job_history tables.",
+            "schema": "liquibase.structure.core.Schema#7583101",
+            "snapshotId": "7583176",
+            "tablespace": "DATA"
+          }
+        },
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#7583166",
+              "liquibase.structure.core.Column#7583160",
+              "liquibase.structure.core.Column#7583159",
+              "liquibase.structure.core.Column#7583156",
+              "liquibase.structure.core.Column#7583169",
+              "liquibase.structure.core.Column#7583170",
+              "liquibase.structure.core.Column#7583164",
+              "liquibase.structure.core.Column#7583171",
+              "liquibase.structure.core.Column#7583172",
+              "liquibase.structure.core.Column#7583168",
+              "liquibase.structure.core.Column#7583162"]
+            ,
+            "default_tablespace": true,
+            "indexes": [
+              "liquibase.structure.core.Index#7583158",
+              "liquibase.structure.core.Index#7583161",
+              "liquibase.structure.core.Index#7583163",
+              "liquibase.structure.core.Index#7583157",
+              "liquibase.structure.core.Index#7583165",
+              "liquibase.structure.core.Index#7583167"]
+            ,
+            "name": "EMPLOYEES",
+            "outgoingForeignKeys": [
+              "liquibase.structure.core.ForeignKey#7583173",
+              "liquibase.structure.core.ForeignKey#7583174",
+              "liquibase.structure.core.ForeignKey#7583185"]
+            ,
+            "primaryKey": "liquibase.structure.core.PrimaryKey#7583186",
+            "remarks": "employees table. Contains 107 rows. References with departments,\njobs, job_history tables. Contains a self reference.",
+            "schema": "liquibase.structure.core.Schema#7583101",
+            "snapshotId": "7583154",
+            "tablespace": "DATA",
+            "uniqueConstraints": [
+              "liquibase.structure.core.UniqueConstraint#7583155"]
+            
+          }
+        },
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#7583149",
+              "liquibase.structure.core.Column#7583150",
+              "liquibase.structure.core.Column#7583151",
+              "liquibase.structure.core.Column#7583152"]
+            ,
+            "default_tablespace": true,
+            "indexes": [
+              "liquibase.structure.core.Index#7583148"]
+            ,
+            "name": "JOBS",
+            "primaryKey": "liquibase.structure.core.PrimaryKey#7583153",
+            "remarks": "jobs table with job titles and salary ranges. Contains 19 rows.\nReferences with employees and job_history table.",
+            "schema": "liquibase.structure.core.Schema#7583101",
+            "snapshotId": "7583147",
+            "tablespace": "DATA"
+          }
+        },
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#7583191",
+              "liquibase.structure.core.Column#7583192",
+              "liquibase.structure.core.Column#7583196",
+              "liquibase.structure.core.Column#7583195",
+              "liquibase.structure.core.Column#7583189"]
+            ,
+            "default_tablespace": true,
+            "indexes": [
+              "liquibase.structure.core.Index#7583188",
+              "liquibase.structure.core.Index#7583190",
+              "liquibase.structure.core.Index#7583193",
+              "liquibase.structure.core.Index#7583194"]
+            ,
+            "name": "JOB_HISTORY",
+            "outgoingForeignKeys": [
+              "liquibase.structure.core.ForeignKey#7583197",
+              "liquibase.structure.core.ForeignKey#7583198",
+              "liquibase.structure.core.ForeignKey#7583199"]
+            ,
+            "primaryKey": "liquibase.structure.core.PrimaryKey#7583200",
+            "remarks": "Table that stores job history of the employees. If an employee\nchanges departments within the job or changes jobs within the department,\nnew rows get inserted into this table with old job information of the\nemployee. Contains a complex primary key: employee_id+start_date.\nContains 25 rows. References with jobs, employees, and departments tables.",
+            "schema": "liquibase.structure.core.Schema#7583101",
+            "snapshotId": "7583187",
+            "tablespace": "DATA"
+          }
+        },
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#7583126",
+              "liquibase.structure.core.Column#7583131",
+              "liquibase.structure.core.Column#7583132",
+              "liquibase.structure.core.Column#7583124",
+              "liquibase.structure.core.Column#7583128",
+              "liquibase.structure.core.Column#7583130"]
+            ,
+            "default_tablespace": true,
+            "indexes": [
+              "liquibase.structure.core.Index#7583123",
+              "liquibase.structure.core.Index#7583125",
+              "liquibase.structure.core.Index#7583127",
+              "liquibase.structure.core.Index#7583129"]
+            ,
+            "name": "LOCATIONS",
+            "outgoingForeignKeys": [
+              "liquibase.structure.core.ForeignKey#7583133"]
+            ,
+            "primaryKey": "liquibase.structure.core.PrimaryKey#7583146",
+            "remarks": "Locations table that contains specific address of a specific office,\nwarehouse, and/or production site of a company. Does not store addresses /\nlocations of customers. Contains 23 rows; references with the\ndepartments and countries tables.",
+            "schema": "liquibase.structure.core.Schema#7583101",
+            "snapshotId": "7583122",
+            "tablespace": "DATA"
+          }
+        },
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#7583224",
+              "liquibase.structure.core.Column#7583225",
+              "liquibase.structure.core.Column#7583226",
+              "liquibase.structure.core.Column#7583227",
+              "liquibase.structure.core.Column#7583228",
+              "liquibase.structure.core.Column#7583229",
+              "liquibase.structure.core.Column#7583230"]
+            ,
+            "default_tablespace": true,
+            "name": "PROSPECTS",
+            "schema": "liquibase.structure.core.Schema#7583101",
+            "snapshotId": "7583223",
+            "tablespace": "DATA"
+          }
+        },
+        {
+          "table": {
+            "columns": [
+              "liquibase.structure.core.Column#7583140",
+              "liquibase.structure.core.Column#7583143"]
+            ,
+            "default_tablespace": true,
+            "indexes": [
+              "liquibase.structure.core.Index#7583142"]
+            ,
+            "name": "REGIONS",
+            "primaryKey": "liquibase.structure.core.PrimaryKey#7583144",
+            "schema": "liquibase.structure.core.Schema#7583101",
+            "snapshotId": "7583141",
+            "tablespace": "DATA"
+          }
+        }]
+      ,
+      "liquibase.structure.core.UniqueConstraint": [
+        {
+          "uniqueConstraint": {
+            "backingIndex": "liquibase.structure.core.Index#7583157",
+            "clustered": false,
+            "columns": [
+              "liquibase.structure.core.Column#7583156"]
+            ,
+            "deferrable": false,
+            "disabled": false,
+            "initiallyDeferred": false,
+            "name": "EMP_EMAIL_UK",
+            "snapshotId": "7583155",
+            "table": "liquibase.structure.core.Table#7583154",
+            "validate": true
+          }
+        }]
+      ,
+      "liquibase.structure.core.View": [
+        {
+          "view": {
+            "columns": [
+              "liquibase.structure.core.Column#7583106",
+              "liquibase.structure.core.Column#7583107",
+              "liquibase.structure.core.Column#7583108",
+              "liquibase.structure.core.Column#7583109",
+              "liquibase.structure.core.Column#7583110",
+              "liquibase.structure.core.Column#7583111",
+              "liquibase.structure.core.Column#7583112",
+              "liquibase.structure.core.Column#7583113",
+              "liquibase.structure.core.Column#7583114",
+              "liquibase.structure.core.Column#7583115",
+              "liquibase.structure.core.Column#7583116",
+              "liquibase.structure.core.Column#7583117",
+              "liquibase.structure.core.Column#7583118",
+              "liquibase.structure.core.Column#7583119",
+              "liquibase.structure.core.Column#7583120",
+              "liquibase.structure.core.Column#7583121"]
+            ,
+            "definition": "SELECT\n  e.employee_id,\n  e.job_id,\n  e.manager_id,\n  e.department_id,\n  d.location_id,\n  l.country_id,\n  e.first_name,\n  e.last_name,\n  e.salary,\n  e.commission_pct,\n  d.department_name,\n  j.job_title,\n  l.city,\n  l.state_province,\n  c.country_name,\n  r.region_name\nFROM\n  employees e,\n  departments d,\n  jobs j,\n  locations l,\n  countries c,\n  regions r\nWHERE e.department_id = d.department_id\n  AND d.location_id = l.location_id\n  AND l.country_id = c.country_id\n  AND c.region_id = r.region_id\n  AND j.job_id = e.job_id\nWITH READ ONLY",
+            "editioning": false,
+            "name": "EMP_DETAILS_VIEW",
+            "schema": "liquibase.structure.core.Schema#7583101",
+            "snapshotId": "7583105"
+          }
+        }]
+      
+    },
+    "snapshotControl": {
+      "snapshotControl": {
+        "includedType": [
+          "liquibase.structure.core.Catalog",
+          "liquibase.structure.core.Column",
+          "liquibase.structure.core.ForeignKey",
+          "liquibase.structure.core.Index",
+          "liquibase.structure.core.PrimaryKey",
+          "liquibase.structure.core.Schema",
+          "liquibase.structure.core.Sequence",
+          "liquibase.structure.core.Table",
+          "liquibase.structure.core.UniqueConstraint",
+          "liquibase.structure.core.View"]
+        
+      }
+    }
+  }
+}

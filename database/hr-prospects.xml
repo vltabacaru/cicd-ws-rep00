@@ -1,0 +1,16 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+    <changeSet author="oracle (generated)" id="1617883535203-1">
+        <createTable tableName="PROSPECTS" tablespace="DATA">
+            <column name="PERSON_ID" type="NUMBER(6, 0)"/>
+            <column name="FIRST_NAME" type="VARCHAR2(20 BYTE)"/>
+            <column name="LAST_NAME" type="VARCHAR2(25 BYTE)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="EMAIL" type="VARCHAR2(37 BYTE)"/>
+            <column name="PHONE_NUMBER" type="VARCHAR2(20 BYTE)"/>
+            <column name="BIRTH_DATE" type="date"/>
+            <column name="SAVINGS" type="NUMBER"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
