@@ -14,3 +14,4 @@ create or replace PACKAGE BODY investment_check AS
         RETURN;
     END get_limits;
 END;
+/
