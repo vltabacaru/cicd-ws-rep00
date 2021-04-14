@@ -9,3 +9,4 @@ create or replace PACKAGE investment_check AS
         RETURN check_table
         PIPELINED;
 END;
+/

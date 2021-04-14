@@ -3,3 +3,4 @@ create or replace TRIGGER secure_employees
 BEGIN
   secure_dml;
 END secure_employees;
+/

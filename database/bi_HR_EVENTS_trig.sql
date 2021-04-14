@@ -6,3 +6,4 @@ begin
     select "HR_EVENTS_SEQ".nextval into :new."ID" from sys.dual;
   end if;
 end;
+/
