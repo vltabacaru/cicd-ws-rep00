@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+  <include file="./employees_seq_sequence.xml" relativeToChangelogFile="true"/> 
+  <include file="./locations_seq_sequence.xml" relativeToChangelogFile="true"/> 
+  <include file="./departments_seq_sequence.xml" relativeToChangelogFile="true"/> 
+  <include file="./countries_table.xml" relativeToChangelogFile="true"/> 
+  <include file="./employees_table.xml" relativeToChangelogFile="true"/> 
+  <include file="./job_history_table.xml" relativeToChangelogFile="true"/> 
+  <include file="./departments_table.xml" relativeToChangelogFile="true"/> 
+  <include file="./jobs_table.xml" relativeToChangelogFile="true"/> 
+  <include file="./regions_table.xml" relativeToChangelogFile="true"/> 
+  <include file="./locations_table.xml" relativeToChangelogFile="true"/> 
+  <include file="./jobs_comments.xml" relativeToChangelogFile="true"/> 
+  <include file="./job_history_comments.xml" relativeToChangelogFile="true"/> 
+  <include file="./locations_comments.xml" relativeToChangelogFile="true"/> 
+  <include file="./departments_comments.xml" relativeToChangelogFile="true"/> 
+  <include file="./employees_comments.xml" relativeToChangelogFile="true"/> 
+  <include file="./countries_comments.xml" relativeToChangelogFile="true"/> 
+  <include file="./emp_details_view_view.xml" relativeToChangelogFile="true"/> 
+  <include file="./jhist_job_fk_ref_constraint.xml" relativeToChangelogFile="true"/> 
+  <include file="./dept_loc_fk_ref_constraint.xml" relativeToChangelogFile="true"/> 
+  <include file="./dept_mgr_fk_ref_constraint.xml" relativeToChangelogFile="true"/> 
+  <include file="./emp_manager_fk_ref_constraint.xml" relativeToChangelogFile="true"/> 
+  <include file="./emp_job_fk_ref_constraint.xml" relativeToChangelogFile="true"/> 
+  <include file="./countr_reg_fk_ref_constraint.xml" relativeToChangelogFile="true"/> 
+  <include file="./jhist_dept_fk_ref_constraint.xml" relativeToChangelogFile="true"/> 
+  <include file="./jhist_emp_fk_ref_constraint.xml" relativeToChangelogFile="true"/> 
+  <include file="./loc_c_id_fk_ref_constraint.xml" relativeToChangelogFile="true"/> 
+  <include file="./emp_dept_fk_ref_constraint.xml" relativeToChangelogFile="true"/> 
+  <include file="./add_job_history_procedure.xml" relativeToChangelogFile="true"/> 
+  <include file="./secure_dml_procedure.xml" relativeToChangelogFile="true"/> 
+  <include file="./loc_state_province_ix_index.xml" relativeToChangelogFile="true"/> 
+  <include file="./jhist_job_ix_index.xml" relativeToChangelogFile="true"/> 
+  <include file="./loc_country_ix_index.xml" relativeToChangelogFile="true"/> 
+  <include file="./emp_department_ix_index.xml" relativeToChangelogFile="true"/> 
+  <include file="./jhist_employee_ix_index.xml" relativeToChangelogFile="true"/> 
+  <include file="./emp_name_ix_index.xml" relativeToChangelogFile="true"/> 
+  <include file="./emp_job_ix_index.xml" relativeToChangelogFile="true"/> 
+  <include file="./jhist_department_ix_index.xml" relativeToChangelogFile="true"/> 
+  <include file="./emp_email_uk_index.xml" relativeToChangelogFile="true"/> 
+  <include file="./emp_manager_ix_index.xml" relativeToChangelogFile="true"/> 
+  <include file="./dept_location_ix_index.xml" relativeToChangelogFile="true"/> 
+  <include file="./loc_city_ix_index.xml" relativeToChangelogFile="true"/> 
+  <include file="./update_job_history_trigger.xml" relativeToChangelogFile="true"/> 
+  <include file="./secure_employees_trigger.xml" relativeToChangelogFile="true"/> 
+</databaseChangeLog> 
