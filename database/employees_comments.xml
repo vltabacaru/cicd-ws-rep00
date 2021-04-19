@@ -5,7 +5,7 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
-	<changeSet id="ff8ee23490a56b501f4f7da35c980f0b639b8892" author="(HR)-Generated" failOnError="false"    >
+	<changeSet id="ff8ee23490a56b501f4f7da35c980f0b639b8892" author="(HR)-Generated" failOnError="false"  label="version_1.0"  >
 		<n0:runOracleScript objectName="EMPLOYEES_COMMENTS" objectType="COMMENT" ownerName="HR" sourceType="STRING"  >
 			<n0:source><![CDATA[
    COMMENT ON COLUMN "HR"."EMPLOYEES"."EMPLOYEE_ID" IS 'Primary key of employees table.';

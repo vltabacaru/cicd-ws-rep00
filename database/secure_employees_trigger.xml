@@ -5,7 +5,7 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
-	<changeSet id="f6acef9bdfcf96da9691d863ddcd83ee3358034a" author="(HR)-Generated" failOnError="false"    >
+	<changeSet id="f6acef9bdfcf96da9691d863ddcd83ee3358034a" author="(HR)-Generated" failOnError="false"  label="version_1.0"  >
 		<n0:createOracleTrigger objectName="SECURE_EMPLOYEES" objectType="TRIGGER" ownerName="HR"   >
 			<n0:source><![CDATA[
   CREATE OR REPLACE EDITIONABLE TRIGGER "HR"."SECURE_EMPLOYEES" 

@@ -5,7 +5,7 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
-	<changeSet id="93020a4f5c3fc570029b0695d52763142b6e44e1" author="(HR)-Generated" failOnError="false"    >
+	<changeSet id="93020a4f5c3fc570029b0695d52763142b6e44e1" author="(HR)-Generated" failOnError="false"  label="version_1.0"  >
 		<n0:createSxmlObject objectName="DEPARTMENTS_SEQ" objectType="SEQUENCE" ownerName="HR"   >
 			<n0:source><![CDATA[
   <SEQUENCE xmlns="http://xmlns.oracle.com/ku" version="1.0">

@@ -5,7 +5,7 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
-	<changeSet id="211f8f8f3a5b4e35621b7663112cb7c9498b13d9" author="(HR)-Generated" failOnError="false"    >
+	<changeSet id="211f8f8f3a5b4e35621b7663112cb7c9498b13d9" author="(HR)-Generated" failOnError="false"  label="version_1.0"  >
 		<n0:createOracleRefConstraint objectName="DEPT_MGR_FK" objectType="REF_CONSTRAINT" ownerName="HR"   >
 			<n0:source><![CDATA[
   ALTER TABLE "HR"."DEPARTMENTS" ADD CONSTRAINT "DEPT_MGR_FK" FOREIGN KEY ("MANAGER_ID")

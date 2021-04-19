@@ -5,7 +5,7 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
-	<changeSet id="98b5fdf43c3fd5d13dfa55319bb6d69937490c3e" author="(HR)-Generated" failOnError="false"    >
+	<changeSet id="98b5fdf43c3fd5d13dfa55319bb6d69937490c3e" author="(HR)-Generated" failOnError="false"  label="version_1.0"  >
 		<n0:createSxmlObject objectName="JHIST_EMPLOYEE_IX" objectType="INDEX" ownerName="HR"   >
 			<n0:source><![CDATA[
   <INDEX xmlns="http://xmlns.oracle.com/ku" version="1.0">
