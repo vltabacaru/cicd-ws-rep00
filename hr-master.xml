@@ -26,4 +26,9 @@
   <changeSet  author="Developer1"  id="tagDatabase-tk001">  
     <tagDatabase  tag="version_3.1"/>  
   </changeSet>
+  <include file="./v3.2/investment_check_package_body.xml" relativeToChangelogFile="true"/>
+  <include file="./v3.2/bi_hr_events_trigger.xml" relativeToChangelogFile="true"/>
+  <changeSet  author="Developer2"  id="tagDatabase-tk002">  
+    <tagDatabase  tag="version_3.2"/>  
+  </changeSet>
 </databaseChangeLog>
