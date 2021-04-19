@@ -22,4 +22,8 @@
   <changeSet  author="Developer3"  id="tagDatabase-v3">  
     <tagDatabase  tag="version_3.0"/>  
   </changeSet>
+  <include file="./v3.1/prospects_table.xml" relativeToChangelogFile="true"/>
+  <changeSet  author="Developer1"  id="tagDatabase-tk001">  
+    <tagDatabase  tag="version_3.1"/>  
+  </changeSet>
 </databaseChangeLog>
