@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="93a404fc85836a8ae8fde17362fa627ca29a6578" author="(HR)-Generated" failOnError="false"    >
+		<n0:createOracleTrigger objectName="BI_HR_EVENTS" objectType="TRIGGER" ownerName="HR"   >
+			<n0:source><![CDATA[CREATE OR REPLACE EDITIONABLE TRIGGER "HR"."BI_HR_EVENTS" 
+  before insert on "HR_EVENTS"              
+  for each row 
+begin  
+  if :new."ID" is null then
+    select "HR_EVENTS_SEQ".nextval into :new."ID" from sys.dual;
+  end if;
+end;
+
+/
+ALTER TRIGGER "HR"."BI_HR_EVENTS" ENABLE]]></n0:source>
+		</n0:createOracleTrigger>
+	</changeSet>
+</databaseChangeLog>

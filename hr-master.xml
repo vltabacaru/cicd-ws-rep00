@@ -14,4 +14,12 @@
   <changeSet  author="Developer2"  id="tagDatabase-v2">  
     <tagDatabase  tag="version_2.0"/>  
   </changeSet>
+  <include file="./v3.0/hr_events_seq_sequence.xml" relativeToChangelogFile="true"/>
+  <include file="./v3.0/hr_events_table.xml" relativeToChangelogFile="true"/>
+  <include file="./v3.0/bi_hr_events_trigger.xml" relativeToChangelogFile="true"/>
+  <include file="./v3.0/prospects_table.xml" relativeToChangelogFile="true"/>
+  <include file="./v3.0/employees_table.xml" relativeToChangelogFile="true"/>
+  <changeSet  author="Developer3"  id="tagDatabase-v3">  
+    <tagDatabase  tag="version_3.0"/>  
+  </changeSet>
 </databaseChangeLog>
