@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+	<changeSet id="392713917e53ca3edbc5ea3e0239f7219c7f9109" author="(HR)-Generated" failOnError="false"    >
+		<n0:createOraclePackageBody objectName="INVESTMENT_CHECK" objectType="PACKAGE_BODY" ownerName="HR"   >
+			<n0:source><![CDATA[CREATE OR REPLACE EDITIONABLE PACKAGE BODY "HR"."INVESTMENT_CHECK" AS
+    FUNCTION get_limits(check_limit number)
+        RETURN check_table
+        PIPELINED IS
+        l_rec check_record;
+    BEGIN
+        FOR l_rec IN (
+          select PERSON_ID, FIRST_NAME, LAST_NAME, 3*SAVINGS as INVESTMENT_LIMIT 
+          from PROSPECTS 
+          where 3*SAVINGS >= check_limit)
+        LOOP
+          PIPE ROW (l_rec);
+        END LOOP;
+        RETURN;
+    END get_limits;
+END;
+]]></n0:source>
+		</n0:createOraclePackageBody>
+	</changeSet>
+</databaseChangeLog>

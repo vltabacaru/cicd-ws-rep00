@@ -8,4 +8,10 @@
   <changeSet  author="Developer1"  id="tagDatabase-v1">  
     <tagDatabase  tag="version_1.0"/>  
   </changeSet>
+  <include file="./v2.0/prospects_table.xml" relativeToChangelogFile="true"/>
+  <include file="./v2.0/investment_check_package_spec.xml" relativeToChangelogFile="true"/>
+  <include file="./v2.0/investment_check_package_body.xml" relativeToChangelogFile="true"/>
+  <changeSet  author="Developer2"  id="tagDatabase-v2">  
+    <tagDatabase  tag="version_2.0"/>  
+  </changeSet>
 </databaseChangeLog>
