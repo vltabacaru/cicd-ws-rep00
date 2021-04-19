@@ -5,7 +5,7 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
-	<changeSet id="060510373f0458d95162e7ad77b0dfbbf487348f" author="(HR)-Generated" failOnError="false"    >
+	<changeSet id="060510373f0458d95162e7ad77b0dfbbf487348f" author="(HR)-Generated" failOnError="false"  label="version_1.0"  >
 		<n0:runOracleScript objectName="JOB_HISTORY_COMMENTS" objectType="COMMENT" ownerName="HR" sourceType="STRING"  >
 			<n0:source><![CDATA[
    COMMENT ON COLUMN "HR"."JOB_HISTORY"."EMPLOYEE_ID" IS 'A not null column in the complex primary key employee_id+start_date.

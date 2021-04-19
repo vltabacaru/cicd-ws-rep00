@@ -5,7 +5,7 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
-	<changeSet id="5b8196cf470dfee2036694421aaddff307008907" author="(HR)-Generated" failOnError="false"    >
+	<changeSet id="5b8196cf470dfee2036694421aaddff307008907" author="(HR)-Generated" failOnError="false"  label="version_1.0"  >
 		<n0:createOracleProcedure objectName="SECURE_DML" objectType="PROCEDURE" ownerName="HR"   >
 			<n0:source><![CDATA[
   CREATE OR REPLACE EDITIONABLE PROCEDURE "HR"."SECURE_DML" 

@@ -5,7 +5,7 @@
 	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
-	<changeSet id="dacce0fcd8e11211fc2029f27242a92fa9334e20" author="(HR)-Generated" failOnError="false"    >
+	<changeSet id="dacce0fcd8e11211fc2029f27242a92fa9334e20" author="(HR)-Generated" failOnError="false"  label="version_1.0"  >
 		<n0:runOracleScript objectName="COUNTRIES_COMMENTS" objectType="COMMENT" ownerName="HR" sourceType="STRING"  >
 			<n0:source><![CDATA[
    COMMENT ON COLUMN "HR"."COUNTRIES"."COUNTRY_ID" IS 'Primary key of countries table.';
